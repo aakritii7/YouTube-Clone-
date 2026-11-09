@@ -9,24 +9,28 @@ import profile_icon from '../../assets/aaku.jpg'
 
 
 const Navbar = () => {
-  return (
-    <nav className='flex-div'>
-        <div className="nav-left flex-div">
-            <img className='menu-icon' src={menu_icon} alt="" />
-            <img className='logo' src={logo} alt="" />
-        </div>
-        <div className="nav-middle flex-div">
-            <input type="tex" placeholder='Search' />
-        </div>
-        <div className="nav-right flex-div">
-            <img src={upload_icon} alt="" />
-            <img src={more_icon} alt="" />
-            <img src={notification_icon} alt="" />
-            <img src={profile_icon} className='user-icon' alt="" />
-        </div>
-      
-    </nav>
-  )
+    return (
+        <nav className='flex-div'>
+            <div className="nav-left flex-div">
+                <img className='menu-icon' src={menu_icon} alt="" />
+                <img className='logo' src={logo} alt="" />
+            </div>
+            <div className="nav-middle flex-div">
+                <div className="search-box flex-div">
+                    <input type="text" placeholder='Search' />
+                    <img src={search_icon} alt="" />
+                </div>
+
+            </div>
+            <div className="nav-right flex-div">
+                <img src={upload_icon} alt="" />
+                <img src={more_icon} alt="" />
+                <img src={notification_icon} alt="" />
+                <img src={profile_icon} className='user-icon' alt="" />
+            </div>
+
+        </nav>
+    )
 }
 
 export default Navbar
