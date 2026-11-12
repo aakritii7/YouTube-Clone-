@@ -1,9 +1,9 @@
 import Sidebar from '../../Component/Sidebar/Sidebar'
 import './Home.css'
-const Home = () => {
+const Home = ({sidebar}) => {
   return (
     <>
-      <Sidebar />
+      <Sidebar sidebar={sidebar} />
     </>
   )
 }
